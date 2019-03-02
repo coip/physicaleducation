@@ -22,16 +22,17 @@ func init() {
 }
 func rollplayer(c, r int) int {
 	var cpoints = 0
-//	fmt.Println("##   rolling", c, r)
+	//	fmt.Println("##   rolling", c, r)
 	for croll := 1; croll <= c; croll++ {
 		randomint := 1 + rand.Intn(r)
-//		fmt.Printf("rolled a %d\n", randomint)
+		//		fmt.Printf("rolled a %d\n", randomint)
 		cpoints += randomint
 
 	}
-//	fmt.Println("done rolling", c, r)
+	//	fmt.Println("done rolling", c, r)
 	return cpoints
 }
 func main() {
+
 	fmt.Println(rollplayer(cdicecount, cdicesize) - rollplayer(pdicecount, pdicesize))
 }
