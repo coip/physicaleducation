@@ -1,5 +1,8 @@
 package main
 
+//crude sample w this on a shell: 
+//for i in {1..1000}; do ./pe205; done | sort | uniq -c
+
 import (
 	"fmt"
 	"math/rand"
