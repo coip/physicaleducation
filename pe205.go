@@ -33,6 +33,12 @@ func rollplayer(c, r int) int {
 	return cpoints
 }
 func main() {
-
-	fmt.Println(rollplayer(cdicecount, cdicesize) - rollplayer(pdicecount, pdicesize))
+	outcome := rollplayer(cdicecount, cdicesize) - rollplayer(pdicecount, pdicesize)
+	if outcome == 0 {
+		fmt.Println("T")
+	} else if outcome > 0 {
+		fmt.Println("C")
+	} else if outcome < 0 {
+		fmt.Println("P")
+	}
 }
