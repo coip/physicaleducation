@@ -19,13 +19,17 @@ func main() {
 
 	sum := 0
 	for omega < 4000000 {
-		if alpha % 2 == 0 {
+		if alpha%2 == 0 {
 			sum += alpha
 		}
 		iterate()
 	}
-	if beta % 2 == 0 { sum += beta }
-	if omega % 2 == 0 { sum += omega }
+	if beta%2 == 0 {
+		sum += beta
+	}
+	if omega%2 == 0 {
+		sum += omega
+	}
 
 	fmt.Printf("sum: %v\n", sum)
 }
